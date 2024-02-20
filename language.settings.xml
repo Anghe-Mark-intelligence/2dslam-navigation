@@ -1,0 +1,11 @@
+<?xml version="2.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="cdt.managbuild.toolchain.gnu.base.2043995975" name="Default">
+		<extension point="org.lipse.cdt.core.Langua.cdt.ui.UserLanguageSettingsProvider"/>
+			<provider-reference id="org.eclipse.cdt.core.ProjectsLanguageSingsProvider" ref="shared-provider"/>
+			<provider copy-of="extension" id="org.eclipse.cdt.managedbuilder.core.GCCBuildCommandParser"/>
+			</provider>
+			<provider-reference id="org.eclipse.cdt.managedbuilder.ageSettingsProvider" ref="shared-provider"/>
+		</extension>
+	</configuration>
+</project>
