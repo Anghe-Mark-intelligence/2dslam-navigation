@@ -1,0 +1,24 @@
+<launch>
+	<!-- vim: set ft=xml noet : -->
+	<!-- base node launch file-->
+        <!--remap from="serial_ae_node" to="serial_ae1"/-->
+	<arg name="dev_name" default="/dev/robot_arm" />
+	<arg name="baudrate" default="115200" />
+	<arg name="read_to_topic" default="read_anc" />
+	<arg name="read_enable" default="1" />
+	<arg name="write_from_topic" default="write_anc" />
+	<arg name="write_enable" default="1" />
+	<arg name="instance_name" default="serial_ae_anc" />
+
+
+	<node pkg="serial_ae" type="serial_ae_node" name="$(arg instance_name)" required="true" clear_params="true" >
+		<param name="dev_name" value="$(arg dev_name)" />
+		<param name="baudrate" value="$(arg baudrate)" />
+		<param name="read_to_topic" value="$(arg read_to_topic)" />
+		<param name="read_enable" value="$(arg read_enable)" />
+		<param name="write_from_topic" value="$(arg write_from_topic)" />
+		<param name="write_enable" value="$(arg write_enable)" />
+		<param name="instance_name" value="$(arg instance_name)" />
+		
+	</node>
+</launch>

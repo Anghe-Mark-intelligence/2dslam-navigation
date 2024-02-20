@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>serial_ae</name>
+  <version>0.0.1</version>
+  <description>aecom serial library</description>
+
+  <author email="eric_weiye@live.com">Eric Wei</author>
+
+  <maintainer email="eric_weiye@live.com">Eric Wei</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>serial</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>serial</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>
