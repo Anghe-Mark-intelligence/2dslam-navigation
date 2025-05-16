@@ -36,7 +36,7 @@ Mark_read_params -v
 
 # Path planning
 The main control program aecom_commander.cpp provides two path planning solutions: one that includes yaw rotation for directional adjustments, and another that performs path planning without yaw rotation.
-
+The integrated SLAM algorithm can provide localization information for various mobile robots, such as unmanned ground vehicles (UGVs), unmanned aerial vehicles (UAVs), quadruped robots, and more. However, in this project, we focus only on our own UGV implementation for convenience. Other applications can be extended based on this framework.
 
 
 # License
