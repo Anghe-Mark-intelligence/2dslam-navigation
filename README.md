@@ -182,7 +182,7 @@ By using status indicators and feedback data, we can define the states of the UG
 # UAV
 We have also developed a platform for drones, including PX4, radar, LiDAR, and T265. Please refer to the following for [details](https://blog.csdn.net/qq_52529995/article/details/143703573?spm=1001.2014.3001.5502).
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b3dcdcd7-4ec3-45df-b369-3dc188391a7f" alt="UAV Diagram" />
+  <img src="https://github.com/user-attachments/assets/b3dcdcd7-4ec3-45df-b369-3dc188391a7f" alt="UAV Diagram" width="60%" />
 </p>
 <p align="center"><b>Figure: Unmanned Aerial Vehicle (UAV)</b></p>
 
