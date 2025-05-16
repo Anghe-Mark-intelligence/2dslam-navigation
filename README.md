@@ -34,6 +34,10 @@ Mark_read_params -v
 # 1.12
 ```
 
+# Path planning
+The main control program aecom_commander.cpp provides two path planning solutions: one that includes yaw rotation for directional adjustments, and another that performs path planning without yaw rotation.
+
+
 
 # License
 MIT License
