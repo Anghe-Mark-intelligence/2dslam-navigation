@@ -98,10 +98,11 @@ rosrun rviz rviz
 ```
 After SSH, operate the remote control to start SLAM mapping and visualize it in RVIZ
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2fbbdfe5-373d-4ae1-8435-c537e579d676" alt="Simultaneous Localization and Mapping" />
+  <img src="https://github.com/user-attachments/assets/2fbbdfe5-373d-4ae1-8435-c537e579d676" alt="Simultaneous Localization and Mapping" width="60%" />
 </p>
 
-<p align="center"><b>Figure: Simultaneous Localization and Mapping</b></p>
+<p align="center"><b>Gif: Simultaneous Localization and Mapping</b></p>
+
 
 
 
@@ -121,6 +122,14 @@ roslaunch hector_slam heang_hector_ugv_shanghai-allinone.launch
 Subsequently, a pile of information will pop up, and the appearance of real coordinates and predetermined coordinates print indicates success. The current case will continue to be printed until entering the next case, at which point we can press the button to start the task.
 
 If you have not configured a channel, please set the automatic button on [qgroundcontrol](https://qgroundcontrol.com/) first. Only after turning the automatic button will the autonomous vehicle start moving.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/01d28008-ea6d-4395-ae69-fd4fc25ae3d4" alt="Path Planning for UGVs" width="60%" />
+</p>
+
+<p align="center"><b>gif: Path Planning for UGVs</b></p>
+
+
 
 # Obstacle avoidance
 We using costmap_2d to avoid obstacles.The costmap_2d package is a core component of the ROS Navigation Stack, used to represent the environment around the robot for path planning and obstacle avoidance. It generates a 2D grid-based map where each cell holds a "cost" value that indicates how safe or risky it is for the robot to traverse that area.
