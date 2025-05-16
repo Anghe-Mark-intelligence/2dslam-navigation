@@ -9,7 +9,14 @@ Our controller mainly uses NUC11PAHi7 with 32GB of running memory, providing pow
   <img src="https://github.com/user-attachments/assets/c44d76d1-e689-4633-bfa4-08407d37f559" />
 </div>
 
-#Experimental Environment
--Device：NUC11PAHi7
--RAM: 32GB
--OS: Ubuntu 18.04
+## Hardware Overview
+
+- **Controller Module**: NUC11PAHi7 (32GB RAM), responsible for SLAM, visual algorithms, and robot control via IMU and gyroscope data.
+- **Lidar Module**: Wheeltec M10P, mounted at the front center of the robot, connected to the controller via USB serial port.
+- **Power Module**: Provides stable power supply for the robot and peripherals.
+- **Visual Recognition Module**: Supports real-time image processing and object detection tasks.
+- **Manipulator Arm**: 6-DOF servo-driven arm, connected through Arduino Mini and USB micro interface.
+- **Operating System**: Ubuntu 18.04 with ROS (Robot Operating System) framework.
+
+
+
