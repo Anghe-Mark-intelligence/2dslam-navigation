@@ -89,7 +89,19 @@ rosrun rviz rviz
 
 ```
 
+# SLAM（Simultaneous Localization and Mapping）
+To visualize SLAM mapping, you need to first start the car, connect the car's WiFi, SSH into the IP, and then open the automation program or manually operate it to create maps in a room with walls.
 
+```bash
+ssh 192.168.12.1@angrobot -y 12345678
+rosrun rviz rviz
+```
+After SSH, operate the remote control to start SLAM mapping and visualize it in RVIZ
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2fbbdfe5-373d-4ae1-8435-c537e579d676" alt="Simultaneous Localization and Mapping" />
+</p>
+
+<p align="center"><b>Figure: Simultaneous Localization and Mapping</b></p>
 
 
 
