@@ -139,7 +139,8 @@ We have also developed a platform for drones, including PX4, radar, LiDAR, and T
 
 
 
-
+# Note
+This is the first project I was responsible for during my undergraduate studies. As the team leader, I independently developed UAV and UGV systems and won awards for unmanned aerial vehicles in the International Unmanned Systems Competition and the second prize in the China Robotics Competition. The submission and publication of the paper were quite bumpy, with several rejections and a long time span. This readme mainly describes how unmanned systems (unmanned vehicles, unmanned aerial vehicles) are used, and there may be some errors in the specific replication process, such as interfaces, protocols, or installation programs. As time has passed for a long time, the unmanned systems mentioned in the article are rarely used after the project ends. Therefore, if there are any problems, please feel free to contact my email: ANGHE2004MARK@outlook.com I am happy to discuss with you issues related to unmanned vehicles, drones, path planning, forward and inverse kinematics of robotic arms, and more.
 
 # License
 MIT License
