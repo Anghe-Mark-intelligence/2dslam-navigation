@@ -127,7 +127,7 @@ If you have not configured a channel, please set the automatic button on [qgroun
   <img src="https://github.com/user-attachments/assets/01d28008-ea6d-4395-ae69-fd4fc25ae3d4" alt="Path Planning for UGVs" width="60%" />
 </p>
 
-<p align="center"><b>gif: Path Planning for UGVs</b></p>
+<p align="center"><b>Gif: Path Planning for UGVs</b></p>
 
 
 
@@ -161,7 +161,7 @@ source devel/setup.bash
   <img src="https://github.com/user-attachments/assets/733d1360-0c74-4b23-a745-3c38bb670b56" alt="Autonomous Obstacle Avoidance for UGVs" />
 </p>
 
-<p align="center"><b>Figure: Autonomous Obstacle Avoidance for UGVs</b></p>
+<p align="center"><b>Gif: Autonomous Obstacle Avoidance for UGVs</b></p>
 
 
 
