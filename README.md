@@ -64,6 +64,24 @@ Subsequently, a pile of information will pop up, and the appearance of real coor
 
 If you have not configured a channel, please set the automatic button on [qgroundcontrol](https://qgroundcontrol.com/) first. Only after turning the automatic button will the autonomous vehicle start moving.
 
+# State of UGV
+
+By using status indicators and feedback data, we can define the states of the UGV (Unmanned Ground Vehicle) as follows:
+
+| State                              | Color                                                        | Description                                                                                  |
+|-------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Self-check                          | <span style="color: #ffcc00;">Breathing</span>                | The UGV is powered on and performing system self-check.                                       |
+| Power On                            | <span style="color: #ffffff; background-color: #000000;">Constant White</span> | The UGV is powered on and ready to be controlled.                                              |
+| Idle (Online)                       | <span style="color: #00ff00;">Constant Green</span>           | The UGV is online and standing by for navigation commands.                                     |
+| Moving (Online)                     | <span style="color: #00ff00; font-weight: bold;">Flashing Green</span> | The UGV is actively moving according to received path planning commands.                      |
+| Manual Control                      | <span style="color: #00ffff;">Constant Cyan</span>            | The UGV is under manual control mode for fine adjustments or calibration.                     |
+| Lifting (Up/Down Operation)         | <span style="color: #0000ff;">Constant Blue</span>            | The UGV is performing lifting operations, adjusting platform height.                          |
+| Trajectory Playback (Offline)       | <span style="color: #800080;">Constant Purple</span>         | The UGV is replaying a recorded trajectory in offline mode. External commands are ignored.    |
+| Moving to Starting Point (Offline)  | <span style="color: #800080; font-weight: bold;">Flowing Purple</span> | The UGV is moving to the starting point of a recorded trajectory in offline mode.             |
+| Executing Playback (Offline)        | <span style="color: #800080; font-weight: bold;">Breathing Purple</span> | The UGV is executing a trajectory replay autonomously.                                       |
+| Error                               | <span style="color: #ff0000;">Constant Red</span>            | The UGV has encountered an error state and has stopped movement.                              |
+
+> The states of the UGV can be switched through control commands from ROS nodes or via physical control buttons.
 
 
 # UAV
