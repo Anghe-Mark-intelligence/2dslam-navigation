@@ -195,6 +195,8 @@ We have also developed a platform for drones, including PX4, radar, LiDAR, and T
 </p>
 <p align="center"><b>Figure: Unmanned Aerial Vehicle (UAV)</b></p>
 
+# Citation
+If you find the code useful, please cite:
 
 
 # Note
