@@ -148,12 +148,13 @@ source devel/setup.bash
 
 ```
 
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/18ac1d9d-7748-46ec-80f0-9ae558cad503" alt="Autonomous Obstacle Avoidance" />
+  <img src="https://github.com/user-attachments/assets/733d1360-0c74-4b23-a745-3c38bb670b56" alt="Autonomous Obstacle Avoidance for UGVs" />
 </p>
 
-<p align="center"><b>Figure: Autonomous Obstacle Avoidance for UGV</b></p>
+<p align="center"><b>Figure: Autonomous Obstacle Avoidance for UGVs</b></p>
+
+
 
 
 
