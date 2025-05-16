@@ -122,6 +122,42 @@ Subsequently, a pile of information will pop up, and the appearance of real coor
 
 If you have not configured a channel, please set the automatic button on [qgroundcontrol](https://qgroundcontrol.com/) first. Only after turning the automatic button will the autonomous vehicle start moving.
 
+# Obstacle avoidance
+We using costmap_2d to avoid obstacles.The costmap_2d package is a core component of the ROS Navigation Stack, used to represent the environment around the robot for path planning and obstacle avoidance. It generates a 2D grid-based map where each cell holds a "cost" value that indicates how safe or risky it is for the robot to traverse that area.
+## Install costmap_2d on Ubuntu 18.04 (ROS Melodic)
+```bash
+# Step 1: Install the ROS navigation stack, which includes costmap_2d
+sudo apt update
+sudo apt install ros-melodic-navigation
+
+# Step 2: Verify that costmap_2d is available
+roscd costmap_2d
+
+# If you can enter the costmap_2d directory, the installation is successful.
+
+# Step 3: (Optional) Clone the source code for customization
+cd ~/catkin_ws/src
+git clone https://github.com/ros-planning/navigation.git
+
+# Step 4: Build the workspace (if using from source)
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+
+# Step 5: Test a costmap demo (if provided) or integrate it in your local planner
+
+```
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/18ac1d9d-7748-46ec-80f0-9ae558cad503" alt="Autonomous Obstacle Avoidance" />
+</p>
+
+<p align="center"><b>Figure: Autonomous Obstacle Avoidance for UGV</b></p>
+
+
+
+
 # State of UGV
 
 By using status indicators and feedback data, we can define the states of the UGV (Unmanned Ground Vehicle) as follows:
