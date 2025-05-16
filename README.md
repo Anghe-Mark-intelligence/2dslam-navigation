@@ -46,6 +46,37 @@ Mark_read_params -v
 # Example output:
 # 1.12
 ```
+## Install Hector SLAM on Ubuntu 18.04 (ROS Melodic)
+
+To perform 2D SLAM mapping with our UGV, we use the Hector SLAM package. Hector SLAM is a lightweight, laser-based SLAM algorithm that does not require odometry or IMU input, making it suitable for platforms with limited sensors.
+
+### Installation Steps
+```bash
+# Step 1: Ensure your system has ROS Melodic installed
+# Official guide: https://wiki.ros.org/melodic/Installation/Ubuntu
+
+# Step 2: Create a catkin workspace if not already created
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin_make
+
+# Step 3: Clone the Hector SLAM source code into the workspace
+cd ~/catkin_ws/src
+git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
+
+# Step 4: Install required dependencies
+sudo apt update
+sudo apt install ros-melodic-hector-mapping ros-melodic-hector-nav-msgs ros-melodic-hector-trajectory-server ros-melodic-hector-geotiff ros-melodic-hector-geotiff-plugins
+
+# Step 5: Build the workspace
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+
+# Step 6: Verify installation with a demo launch
+roslaunch hector_slam_launch tutorial.launch
+```
+
 
 # Path planning
 The main control program aecom_commander.cpp provides two path planning solutions: one that includes yaw rotation for directional adjustments, and another that performs path planning without yaw rotation.
