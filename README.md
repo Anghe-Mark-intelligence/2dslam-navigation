@@ -101,7 +101,7 @@ After SSH, operate the remote control to start SLAM mapping and visualize it in 
   <img src="https://github.com/user-attachments/assets/2fbbdfe5-373d-4ae1-8435-c537e579d676" alt="Simultaneous Localization and Mapping" width="60%" />
 </p>
 
-<p align="center"><b>Gif: Simultaneous Localization and Mapping</b></p>
+<p align="center"><b>Figure: Simultaneous Localization and Mapping</b></p>
 
 
 
