@@ -1,4 +1,4 @@
-# 2dslam-navigation
+# 2dslam-navigation-T265-with-hectorslam
 A 2D SLAM based AGV Ackermann or Mecanum chassis navigation method that can be applied to ship clearance robots or automatic navigation robots
 Contains multiple files, based on the ROS of Ubuntu 18.04 under Linux, which is a part of the workspace's src.
 This project is for learning reference only and is convenient for personal use,the robots related to this project have been published in English journals.
@@ -17,6 +17,22 @@ Our controller mainly uses NUC11PAHi7 with 32GB of running memory, providing pow
 - **Visual Recognition Module**: Supports real-time image processing and object detection tasks.
 - **Manipulator Arm**: 6-DOF servo-driven arm, connected through Arduino Mini and USB micro interface.
 - **Operating System**: Ubuntu 18.04 with ROS (Robot Operating System) framework.
+
+# Setting
+Our robot requires ROS（Robot Operating system).To install ROS, you can refer to the following [tutorial](https://www.ros.org/).
+```bash
+mkdir angrobotarm
+cd angrobotarm
+conda create --name angrobot python=3.8
+conda activate angrobot
+sudo apt install ./packages/Markrobot_<version>_amd64.deb
+```
+Run the following command to validate the installation:
+```bash
+Mark_read_params -v
+# Example output:
+# 1.12
+```
 
 
 # License
