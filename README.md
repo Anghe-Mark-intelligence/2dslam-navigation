@@ -19,4 +19,5 @@ Our controller mainly uses NUC11PAHi7 with 32GB of running memory, providing pow
 - **Operating System**: Ubuntu 18.04 with ROS (Robot Operating System) framework.
 
 
-
+# License
+MIT License
