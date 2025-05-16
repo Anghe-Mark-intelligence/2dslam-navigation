@@ -9,3 +9,7 @@ Our controller mainly uses NUC11PAHi7 with 32GB of running memory, providing pow
   <img src="https://github.com/user-attachments/assets/c44d76d1-e689-4633-bfa4-08407d37f559" />
 </div>
 
+#Experimental Environment
+-Device：NUC11PAHi7
+-RAM: 32GB
+-OS: Ubuntu 18.04
