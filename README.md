@@ -17,6 +17,15 @@ Our controller mainly uses NUC11PAHi7 with 32GB of running memory, providing pow
 - **Visual Recognition Module**: Supports real-time image processing and object detection tasks.
 - **Manipulator Arm**: 6-DOF servo-driven arm, connected through Arduino Mini and USB micro interface.
 - **Operating System**: Ubuntu 18.04 with ROS (Robot Operating System) framework.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08a78699-0f30-4a39-b25a-025b95593269" alt="image1" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e535831-a10c-4e7c-b309-d15621b8f971" alt="image2" />
+</p>
+
+
 
 # Setting
 Our robot requires ROS（Robot Operating system).To install ROS, you can refer to the following [tutorial](https://www.ros.org/).
@@ -37,6 +46,19 @@ Mark_read_params -v
 # Path planning
 The main control program aecom_commander.cpp provides two path planning solutions: one that includes yaw rotation for directional adjustments, and another that performs path planning without yaw rotation.
 The integrated SLAM algorithm can provide localization information for various mobile robots, such as unmanned ground vehicles (UGVs), unmanned aerial vehicles (UAVs), quadruped robots, and more. However, in this project, we focus only on our own UGV implementation for convenience. Other applications can be extended based on this framework.
+The aecom_commander.cpp file is the main control program for the UGV, implementing a finite state machine (FSM) to manage navigation, path planning, and lifting operations. It provides two path planning methods: one with active yaw adjustment for precise orientation control, and another without yaw rotation for simpler linear movements. The UGV's position is continuously updated using tf transforms, while velocity commands are published to control motion. A serial communication interface handles the lifting mechanism. This design allows the UGV to autonomously follow a predefined path through a series of waypoints, transitioning between states based on real-time position feedback.
+
+```bash
+cd ugv_ros_ws
+catkin build
+```
+After completion, please enter the following code：
+```bash
+roslaunch hector_slam heang_hector_ugv_shanghai-allinone.launch
+```
+Subsequently, a pile of information will pop up, and the appearance of real coordinates and predetermined coordinates print indicates success. The current case will continue to be printed until entering the next case, at which point we can press the button to start the task.
+
+If you have not configured a channel, please set the automatic button on [qgroundcontrol](https://qgroundcontrol.com/) first. Only after turning the automatic button will the autonomous vehicle start moving.
 
 
 # License
